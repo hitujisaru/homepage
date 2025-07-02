@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>コラム一覧 | Hitujisaru</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/loadCommon.js" defer></script>
+  <script src="/js/column.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <h2 class="section-title">コラム記事一覧</h2>
+
+    <div class="column-header">
+      <label for="sort-order">表示順：</label>
+      <select id="sort-order">
+        <option value="desc">新しい順</option>
+        <option value="asc">古い順</option>
+      </select>
+    </div>
+
+    <div id="column-cards" class="column-cards"></div>
+  </main>
+
+</body>
+</html>

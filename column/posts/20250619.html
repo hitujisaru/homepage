@@ -1,0 +1,79 @@
+<!-- /column/posts/2025-06-17-example.html -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>記事タイトル - Hitujisaru</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <script src="/js/loadCommon.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <article>
+      <h2 class="section-title">コラム投稿方法</h2>
+      <p><time datetime="2025-06-17">2025年6月19日</time></p>
+      <p>こんにちは。示坤です。</p>
+      <p>今回は、コラム記事の投稿方法について忘れないようにまとめたいと思います。</p>
+      <p>
+        このコラムページは0から私の手で作成しているのですが、
+        久しぶりにコードを開くと、「あれ、どこをいじれはいいんだっけ？」とそれまでの内容を忘れてしまっていました。
+      </p>
+      <p>なので今回はコラム投稿の方法を思い出せるようにまとめておきたいと思います。</p>
+
+      <h3>新しい記事を作成する方法</h3>
+      <p>まずはフォルダ構成のおさらいから。</p>
+      <code>
+        <p>column/</p>
+        <p>├─ column.html         ← 一覧ページ</p>
+        <p>├─ posts/</p>
+        <p>│   ├─ 20250620.html ← 作る記事（例）</p>
+        <p>├─ /images/column/</p>
+        <p>│   ├─ 20250620-thumb.jpg ← 記事サムネイル画像</p>
+        <p>├─ /js/</p>
+        <p>│   ├─ column.js       ← 一覧を自動生成するスクリプト</p>
+      </code>
+      <p>これらがコラム投稿時に使うファイルたちです。</p>
+      <p>それらを踏まえたうえで、説明を進めていきます。</p>
+
+      <h3>1.記事ファイル(.html)を作成</h3>
+      <p>
+        <code>column/post/</code>フォルダ内に、日付を使ったファイル名で新しいHTMLファイルを作成する。<br>
+        例：<code>20250619.html</code>
+      </p>
+      <p>ファイルの中身はサンプルを参考にする。</p>
+      <p>
+        <code>20250610.html</code>ファイルがサンプルファイルなので、中身をコピペし、必要なところを書き換えて記事を書く。
+      </p>
+      <h3>2.サムネイル画像を用意する</h3>
+      <p>
+        <code>/images/column/</code>フォルダに、記事と同じ日付のファイル名でサムネイル画像を保存する。<br>
+        例：<code>20250619-thumb.jpg</code>
+      </p>
+      <p>画像例：</p>
+      <img src="/images/column/20250619-thumb.jpg" alt="サムネイル例" style="max-width: 100%; border: 1px solid #ccc;">
+
+      <h3>3.JavaScriptファイルに記事データを追加</h3>
+      <p>
+        <code>/js/column.js</code>の<code>posts</code>配列に、以下のような情報を1行追加する：
+      </p>
+      <pre><code>
+      {
+        title: "記事タイトル",
+        date: "2025-06-19",
+        folder: "20250619",
+        thumbnail: "/images/column/20250619-thumb.jpg",
+        description: "記事の概要や紹介文。"
+      }
+      </code></pre>
+
+      <h3>4.完了</h3>
+      <p>このような操作で、自動的にコラム一覧に記事がカード表示されます。表示順もプルダウンから変更できます。</p>
+
+      <p>三日坊主にならないように、継続してがんばれ俺。</p>
+    </article>
+
+
+    <p><a href="/column/column.html">&larr; コラム一覧へ戻る</a></p>
+  </main>
+</body>
+</html>
