@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
 
 // コラム取得
-fetch("/homepage/column/column.json")
+fetch("../column/column.json")
   .then(res => res.json())
   .then(data => {
     const colEl = document.getElementById("column-cards");

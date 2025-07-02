@@ -3,28 +3,28 @@ const posts = [
     title: "手帳に1日1知識",
     date: "2025-07-02",
     folder: "20250702",
-    thumbnail: "/homepage/images/column/20250702-thumb.png",
+    thumbnail: "../images/column/20250702-thumb.png",
     description: "最近の習慣"
   },
   {
     title: "コラム記事の投稿方法",
     date: "2025-06-19",
     folder: "20250619",
-    thumbnail: "/homepage/images/column/20250619-thumb.jpg",
+    thumbnail: "../images/column/20250619-thumb.jpg",
     description: "コラム投稿方法"
   },
   {
     title: "人生はじめてのコラム投稿！",
     date: "2025-06-17",
     folder: "20250617",
-    thumbnail: "/homepage/images/column/20250617-thumb.jpg",
+    thumbnail: "../images/column/20250617-thumb.jpg",
     description: "自己紹介、意気込み等"
   },
   {
     title: "サンプル",
     date: "2025-06-10",
     folder: "20250610", // ← フォルダ名だけでOK
-    thumbnail: "/homepage/images/column/20250610-thumb.jpg",
+    thumbnail: "../images/column/20250610-thumb.jpg",
     description: "記事の概要や説明"
   }
 ];
